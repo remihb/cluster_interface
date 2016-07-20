@@ -6,10 +6,10 @@ class Port{
     }
 }
 
-class In extends Port{
+class Input extends Port{
 
 }
 
-class Out extends Port{
+class Output extends Port{
 
 }

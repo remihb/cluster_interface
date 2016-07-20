@@ -8,17 +8,17 @@ var Port = (function () {
     }
     return Port;
 }());
-var In = (function (_super) {
-    __extends(In, _super);
-    function In() {
+var Input = (function (_super) {
+    __extends(Input, _super);
+    function Input() {
         _super.apply(this, arguments);
     }
-    return In;
+    return Input;
 }(Port));
-var Out = (function (_super) {
-    __extends(Out, _super);
-    function Out() {
+var Output = (function (_super) {
+    __extends(Output, _super);
+    function Output() {
         _super.apply(this, arguments);
     }
-    return Out;
+    return Output;
 }(Port));

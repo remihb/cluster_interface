@@ -1,6 +1,6 @@
 var Component = (function () {
     function Component() {
-        this._port = new Port[2]("bla");
+        this._input = new Input("bla");
     }
     return Component;
 }());

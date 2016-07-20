@@ -1,9 +1,9 @@
 interface Component{
-    _port: Port[];
+    _input: Input;
 }
 
 class Component {
     constructor(){
-        this._port = new Port[2]("bla");
+        this._input = new Input("bla");
     }
 }
