@@ -1,2 +1,14 @@
-<div class="jumbotron">
+<div class="row">
+    <div class="col-xs-6 col-lg-4">
+        <div ng-controller="MainCtrl">
+            <ui-select ng-model="module.selected" limit="100" ng-disabled="!moduleList">
+                <ui-select-match placeholder="Select module" ng-click="changePlaceholder()">{{$select.selected.name}}</ui-select-match>
+                <ui-select-choices limit="10" repeat="module in moduleList | listFilter: $select.search | limitTo : $select.limit" class="form-control">
+                    <span ng-bind-html="module.name | highlight: $select.search"></span>
+                </ui-select-choices>
+            </ui-select>
+            {{ module.selected.name }}
+    </div>
+    <div class="col-xs-12 col-sm-6 col-lg-8">
+    </div>
 </div>
