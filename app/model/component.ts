@@ -4,6 +4,6 @@ interface Component{
 
 class Component {
     constructor(){
-        this._input = new Input("bla");
+        this._input = new Input();
     }
 }

@@ -2,7 +2,7 @@ interface Port{
 }
 
 class Port{
-    constructor(name:string){
+    constructor(){
     }
 }
 
