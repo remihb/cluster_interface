@@ -1,0 +1,440 @@
+{"stream":"Step 1 : FROM debian:latest\n"}
+{"stream":" ---\u003e 1b01529cc499\n"}
+{"stream":"Step 2 : COPY wordcount.sh /data/wordcount.sh\n"}
+{"stream":" ---\u003e 6ad3dd4302b3\n"}
+{"stream":"Removing intermediate container c31329f322f3\n"}
+{"stream":"Step 3 : RUN chmod +x /data/wordcount.sh\n"}
+{"stream":" ---\u003e Running in 2c9b0c903360\n"}
+{"stream":" ---\u003e 98a43c085940\n"}
+{"stream":"Removing intermediate container 2c9b0c903360\n"}
+{"stream":"Step 4 : RUN apt-get update \u0026\u0026 apt-get install -y   enscript   ghostscript\n"}
+{"stream":" ---\u003e Running in 35909d774c92\n"}
+{"stream":"Get:1 http://security.debian.org jessie/updates InRelease [63.1 kB]\n"}
+{"stream":"Get:2 http://security.debian.org jessie/updates/main amd64 Packages [373 kB]\n"}
+{"stream":"Ign http://httpredir.debian.org jessie InRelease\n"}
+{"stream":"Get:3 http://httpredir.debian.org jessie-updates InRelease [142 kB]\n"}
+{"stream":"Get:4 http://httpredir.debian.org jessie Release.gpg [2373 B]\n"}
+{"stream":"Get:5 http://httpredir.debian.org jessie-updates/main amd64 Packages [17.6 kB]\n"}
+{"stream":"Get:6 http://httpredir.debian.org jessie Release [148 kB]\n"}
+{"stream":"Get:7 http://httpredir.debian.org jessie/main amd64 Packages [9032 kB]\n"}
+{"stream":"Fetched 9778 kB in 4s (2048 kB/s)\nReading package lists..."}
+{"stream":"\n"}
+{"stream":"Reading package lists..."}
+{"stream":"\n"}
+{"stream":"Building dependency tree..."}
+{"stream":"\nReading state information...\n"}
+{"stream":"The following extra packages will be installed:\n  dbus fontconfig-config fonts-dejavu-core fonts-droid gsfonts krb5-locales\n  libalgorithm-c3-perl libarchive-extract-perl libavahi-client3\n  libavahi-common-data libavahi-common3 libcap-ng0 libcgi-fast-perl\n  libcgi-pm-perl libclass-c3-perl libclass-c3-xs-perl libcpan-meta-perl\n  libcups2 libcupsfilters1 libcupsimage2 libdata-optlist-perl\n  libdata-section-perl libdbus-1-3 libexpat1 libfcgi-perl libffi6\n  libfontconfig1 libfreetype6 libgdbm3 libgmp10 libgnutls-deb0-28 libgs9\n  libgs9-common libgssapi-krb5-2 libhogweed2 libidn11 libijs-0.35 libjasper1\n  libjbig0 libjbig2dec0 libjpeg62-turbo libk5crypto3 libkeyutils1 libkrb5-3\n  libkrb5support0 liblcms2-2 liblog-message-perl liblog-message-simple-perl\n  libmodule-build-perl libmodule-pluggable-perl libmodule-signature-perl\n  libmro-compat-perl libnettle4 libp11-kit0 libpackage-constants-perl\n  libpaper-utils libpaper1 libparams-util-perl libpng12-0 libpod-latex-perl\n  libpod-readme-perl libregexp-common-perl libsoftware-license-perl\n  libsub-exporter-perl libsub-install-perl libtasn1-6 libterm-ui-perl\n  libtext-soundex-perl libtext-template-perl libtiff5 perl perl-modules\n  poppler-data rename ucf\n"}
+{"stream":"Suggested packages:\n  dbus-x11 gv postscript-viewer lpr ghostscript-x cups-common gnutls-bin\n  krb5-doc krb5-user libjasper-runtime liblcms2-utils perl-doc\n  libterm-readline-gnu-perl libterm-readline-perl-perl make libb-lint-perl\n  libcpanplus-dist-build-perl libcpanplus-perl libfile-checktree-perl\n  libobject-accessor-perl poppler-utils fonts-japanese-mincho\n  fonts-ipafont-mincho fonts-japanese-gothic fonts-ipafont-gothic\n  fonts-arphic-ukai fonts-arphic-uming fonts-nanum\nRecommended packages:\n  libarchive-tar-perl\n"}
+{"stream":"The following NEW packages will be installed:\n  dbus enscript fontconfig-config fonts-dejavu-core fonts-droid ghostscript\n  gsfonts krb5-locales libalgorithm-c3-perl libarchive-extract-perl\n  libavahi-client3 libavahi-common-data libavahi-common3 libcap-ng0\n  libcgi-fast-perl libcgi-pm-perl libclass-c3-perl libclass-c3-xs-perl\n  libcpan-meta-perl libcups2 libcupsfilters1 libcupsimage2\n  libdata-optlist-perl libdata-section-perl libdbus-1-3 libexpat1 libfcgi-perl\n  libffi6 libfontconfig1 libfreetype6 libgdbm3 libgmp10 libgnutls-deb0-28\n  libgs9 libgs9-common libgssapi-krb5-2 libhogweed2 libidn11 libijs-0.35\n  libjasper1 libjbig0 libjbig2dec0 libjpeg62-turbo libk5crypto3 libkeyutils1\n  libkrb5-3 libkrb5support0 liblcms2-2 liblog-message-perl\n  liblog-message-simple-perl libmodule-build-perl libmodule-pluggable-perl\n  libmodule-signature-perl libmro-compat-perl libnettle4 libp11-kit0\n  libpackage-constants-perl libpaper-utils libpaper1 libparams-util-perl\n  libpng12-0 libpod-latex-perl libpod-readme-perl libregexp-common-perl\n  libsoftware-license-perl libsub-exporter-perl libsub-install-perl libtasn1-6\n  libterm-ui-perl libtext-soundex-perl libtext-template-perl libtiff5 perl\n  perl-modules poppler-data rename ucf\n"}
+{"stream":"0 upgraded, 77 newly installed, 0 to remove and 0 not upgraded.\nNeed to get 28.8 MB of archives.\nAfter this operation, 107 MB of additional disk space will be used.\nGet:1 http://httpredir.debian.org/debian/ jessie/main libgdbm3 amd64 1.8.3-13.1 [30.0 kB]\n"}
+{"stream":"Get:2 http://security.debian.org/ jessie/updates/main perl-modules all 5.20.2-3+deb8u6 [2547 kB]\n"}
+{"stream":"Get:3 http://httpredir.debian.org/debian/ jessie/main libgmp10 amd64 2:6.0.0+dfsg-6 [253 kB]\n"}
+{"stream":"Get:4 http://httpredir.debian.org/debian/ jessie/main libnettle4 amd64 2.7.1-5+deb8u1 [176 kB]\n"}
+{"stream":"Get:5 http://httpredir.debian.org/debian/ jessie/main libffi6 amd64 3.1-2+b2 [20.1 kB]\n"}
+{"stream":"Get:6 http://httpredir.debian.org/debian/ jessie/main libhogweed2 amd64 2.7.1-5+deb8u1 [126 kB]\n"}
+{"stream":"Get:7 http://httpredir.debian.org/debian/ jessie/main libkeyutils1 amd64 1.5.9-5+b1 [12.0 kB]\n"}
+{"stream":"Get:8 http://httpredir.debian.org/debian/ jessie/main libgnutls-deb0-28 amd64 3.3.8-6+deb8u3 [694 kB]\n"}
+{"stream":"Get:9 http://httpredir.debian.org/debian/ jessie/main libp11-kit0 amd64 0.20.7-1 [81.2 kB]\n"}
+{"stream":"Get:10 http://httpredir.debian.org/debian/ jessie/main libkrb5support0 amd64 1.12.1+dfsg-19+deb8u2 [59.1 kB]\n"}
+{"stream":"Get:11 http://httpredir.debian.org/debian/ jessie/main libtasn1-6 amd64 4.2-3+deb8u2 [49.0 kB]\n"}
+{"stream":"Get:12 http://httpredir.debian.org/debian/ jessie/main libkrb5-3 amd64 1.12.1+dfsg-19+deb8u2 [303 kB]\n"}
+{"stream":"Get:13 http://httpredir.debian.org/debian/ jessie/main libdbus-1-3 amd64 1.8.20-0+deb8u1 [170 kB]\n"}
+{"stream":"Get:14 http://httpredir.debian.org/debian/ jessie/main fonts-droid all 1:4.4.4r2-6 [3729 kB]\n"}
+{"stream":"Get:15 http://httpredir.debian.org/debian/ jessie/main libjpeg62-turbo amd64 1:1.3.1-12 [116 kB]\n"}
+{"stream":"Get:16 http://httpredir.debian.org/debian/ jessie/main libpng12-0 amd64 1.2.50-2+deb8u2 [173 kB]\n"}
+{"stream":"Get:17 http://httpredir.debian.org/debian/ jessie/main libcupsfilters1 amd64 1.0.61-5+deb8u3 [106 kB]\n"}
+{"stream":"Get:18 http://httpredir.debian.org/debian/ jessie/main ucf all 3.0030 [69.7 kB]\n"}
+{"stream":"Get:19 http://httpredir.debian.org/debian/ jessie/main libk5crypto3 amd64 1.12.1+dfsg-19+deb8u2 [115 kB]\n"}
+{"stream":"Get:20 http://security.debian.org/ jessie/updates/main perl amd64 5.20.2-3+deb8u6 [2637 kB]\n"}
+{"stream":"Get:21 http://httpredir.debian.org/debian/ jessie/main libgssapi-krb5-2 amd64 1.12.1+dfsg-19+deb8u2 [152 kB]\n"}
+{"stream":"Get:22 http://httpredir.debian.org/debian/ jessie/main liblcms2-2 amd64 2.6-3+b3 [141 kB]\n"}
+{"stream":"Get:23 http://httpredir.debian.org/debian/ jessie/main libpaper1 amd64 1.1.24+nmu4 [22.0 kB]\n"}
+{"stream":"Get:24 http://httpredir.debian.org/debian/ jessie/main libidn11 amd64 1.29-1+deb8u1 [136 kB]\n"}
+{"stream":"Get:25 http://httpredir.debian.org/debian/ jessie/main poppler-data all 0.4.7-1 [1491 kB]\n"}
+{"stream":"Get:26 http://httpredir.debian.org/debian/ jessie/main libcups2 amd64 1.7.5-11+deb8u1 [283 kB]\n"}
+{"stream":"Get:27 http://httpredir.debian.org/debian/ jessie/main libjbig0 amd64 2.1-3.1 [30.7 kB]\n"}
+{"stream":"Get:28 http://httpredir.debian.org/debian/ jessie/main libtiff5 amd64 4.0.3-12.3+deb8u1 [213 kB]\n"}
+{"stream":"Get:29 http://httpredir.debian.org/debian/ jessie/main libjbig2dec0 amd64 0.11+20120125-1 [51.8 kB]\n"}
+{"stream":"Get:30 http://httpredir.debian.org/debian/ jessie/main fonts-dejavu-core all 2.34-1 [1047 kB]\n"}
+{"stream":"Get:31 http://httpredir.debian.org/debian/ jessie/main ghostscript amd64 9.06~dfsg-2+deb8u1 [84.0 kB]\n"}
+{"stream":"Get:32 http://httpredir.debian.org/debian/ jessie/main libalgorithm-c3-perl all 0.09-1 [11.9 kB]\n"}
+{"stream":"Get:33 http://httpredir.debian.org/debian/ jessie/main libcgi-pm-perl all 4.09-1 [213 kB]\n"}
+{"stream":"Get:34 http://httpredir.debian.org/debian/ jessie/main libcgi-fast-perl all 1:2.04-1 [10.9 kB]\n"}
+{"stream":"Get:35 http://httpredir.debian.org/debian/ jessie/main libclass-c3-perl all 0.26-1 [22.9 kB]\n"}
+{"stream":"Get:36 http://httpredir.debian.org/debian/ jessie/main libparams-util-perl amd64 1.07-2+b1 [23.5 kB]\n"}
+{"stream":"Get:37 http://httpredir.debian.org/debian/ jessie/main libdata-section-perl all 0.200006-1 [13.4 kB]\n"}
+{"stream":"Get:38 http://httpredir.debian.org/debian/ jessie/main liblog-message-simple-perl all 0.10-2 [8126 B]\n"}
+{"stream":"Get:39 http://httpredir.debian.org/debian/ jessie/main libpod-latex-perl all 0.61-1 [34.7 kB]\n"}
+{"stream":"Get:40 http://httpredir.debian.org/debian/ jessie/main libtext-template-perl all 1.46-1 [53.1 kB]\n"}
+{"stream":"Get:41 http://httpredir.debian.org/debian/ jessie/main libsoftware-license-perl all 0.103010-3 [119 kB]\n"}
+{"stream":"Get:42 http://httpredir.debian.org/debian/ jessie/main libterm-ui-perl all 0.42-1 [19.1 kB]\n"}
+{"stream":"Get:43 http://httpredir.debian.org/debian/ jessie/main libtext-soundex-perl amd64 3.4-1+b2 [13.7 kB]\n"}
+{"stream":"Get:44 http://security.debian.org/ jessie/updates/main libexpat1 amd64 2.1.0-6+deb8u3 [80.0 kB]\n"}
+{"stream":"Get:45 http://security.debian.org/ jessie/updates/main libmodule-build-perl all 0.421000-2+deb8u1 [265 kB]\n"}
+{"stream":"Get:46 http://httpredir.debian.org/debian/ jessie/main fontconfig-config all 2.11.0-6.3 [273 kB]\n"}
+{"stream":"Get:47 http://httpredir.debian.org/debian/ jessie/main libijs-0.35 amd64 0.35-10 [20.0 kB]\n"}
+{"stream":"Get:48 http://httpredir.debian.org/debian/ jessie/main dbus amd64 1.8.20-0+deb8u1 [291 kB]\n"}
+{"stream":"Get:49 http://httpredir.debian.org/debian/ jessie/main libavahi-common-data amd64 0.6.31-5 [98.6 kB]\n"}
+{"stream":"Get:50 http://httpredir.debian.org/debian/ jessie/main krb5-locales all 1.12.1+dfsg-19+deb8u2 [2649 kB]\n"}
+{"stream":"Get:51 http://httpredir.debian.org/debian/ jessie/main libavahi-common3 amd64 0.6.31-5 [51.1 kB]\n"}
+{"stream":"Get:52 http://httpredir.debian.org/debian/ jessie/main libavahi-client3 amd64 0.6.31-5 [54.4 kB]\n"}
+{"stream":"Get:53 http://httpredir.debian.org/debian/ jessie/main libcap-ng0 amd64 0.7.4-2 [13.2 kB]\n"}
+{"stream":"Get:54 http://httpredir.debian.org/debian/ jessie/main libcupsimage2 amd64 1.7.5-11+deb8u1 [117 kB]\n"}
+{"stream":"Get:55 http://httpredir.debian.org/debian/ jessie/main libfreetype6 amd64 2.5.2-3+deb8u1 [466 kB]\n"}
+{"stream":"Get:56 http://httpredir.debian.org/debian/ jessie/main libfontconfig1 amd64 2.11.0-6.3 [329 kB]\n"}
+{"stream":"Get:57 http://httpredir.debian.org/debian/ jessie/main libjasper1 amd64 1.900.1-debian1-2.4+deb8u1 [134 kB]\n"}
+{"stream":"Get:58 http://httpredir.debian.org/debian/ jessie/main libgs9-common all 9.06~dfsg-2+deb8u1 [1979 kB]\n"}
+{"stream":"Get:59 http://httpredir.debian.org/debian/ jessie/main enscript amd64 1.6.5.90-2+b1 [413 kB]\n"}
+{"stream":"Get:60 http://httpredir.debian.org/debian/ jessie/main gsfonts all 1:8.11+urwcyr1.0.7~pre44-4.2 [3364 kB]\n"}
+{"stream":"Get:61 http://httpredir.debian.org/debian/ jessie/main libgs9 amd64 9.06~dfsg-2+deb8u1 [1916 kB]\n"}
+{"stream":"Get:62 http://httpredir.debian.org/debian/ jessie/main libclass-c3-xs-perl amd64 0.13-2+b1 [15.2 kB]\n"}
+{"stream":"Get:63 http://httpredir.debian.org/debian/ jessie/main libcpan-meta-perl all 2.142690-1 [125 kB]\n"}
+{"stream":"Get:64 http://httpredir.debian.org/debian/ jessie/main libsub-install-perl all 0.928-1 [11.4 kB]\n"}
+{"stream":"Get:65 http://httpredir.debian.org/debian/ jessie/main libdata-optlist-perl all 0.109-1 [10.6 kB]\n"}
+{"stream":"Get:66 http://httpredir.debian.org/debian/ jessie/main libmro-compat-perl all 0.12-1 [13.2 kB]\n"}
+{"stream":"Get:67 http://httpredir.debian.org/debian/ jessie/main libsub-exporter-perl all 0.986-1 [49.9 kB]\n"}
+{"stream":"Get:68 http://httpredir.debian.org/debian/ jessie/main libmodule-pluggable-perl all 5.1-1 [25.0 kB]\n"}
+{"stream":"Get:69 http://httpredir.debian.org/debian/ jessie/main libarchive-extract-perl all 0.72-1 [24.8 kB]\n"}
+{"stream":"Get:70 http://httpredir.debian.org/debian/ jessie/main libpackage-constants-perl all 0.04-1 [5820 B]\n"}
+{"stream":"Get:71 http://httpredir.debian.org/debian/ jessie/main libregexp-common-perl all 2013031301-1 [173 kB]\nGet:72 http://httpredir.debian.org/debian/ jessie/main libfcgi-perl amd64 0.77-1+b1 [39.1 kB]\n"}
+{"stream":"Get:73 http://httpredir.debian.org/debian/ jessie/main liblog-message-perl all 0.8-1 [26.0 kB]\n"}
+{"stream":"Get:74 http://httpredir.debian.org/debian/ jessie/main libmodule-signature-perl all 0.73-1+deb8u2 [30.4 kB]\n"}
+{"stream":"Get:75 http://httpredir.debian.org/debian/ jessie/main rename all 0.20-3 [12.4 kB]\n"}
+{"stream":"Get:76 http://httpredir.debian.org/debian/ jessie/main libpaper-utils amd64 1.1.24+nmu4 [17.5 kB]\n"}
+{"stream":"Get:77 http://httpredir.debian.org/debian/ jessie/main libpod-readme-perl all 0.11-1 [15.3 kB]\n"}
+{"stream":"\u001b[91mdebconf: delaying package configuration, since apt-utils is not installed\n\u001b[0m"}
+{"stream":"Fetched 28.8 MB in 10s (2671 kB/s)\n"}
+{"stream":"Selecting previously unselected package libgdbm3:amd64.\r\n(Reading database ... \r"}
+{"stream":"(Reading database ... 5%\r"}
+{"stream":"(Reading database ... 10%\r"}
+{"stream":"(Reading database ... 15%\r"}
+{"stream":"(Reading database ... 20%\r"}
+{"stream":"(Reading database ... 25%\r"}
+{"stream":"(Reading database ... 30%\r(Reading database ... 35%\r(Reading database ... 40%\r(Reading database ... 45%\r(Reading database ... 50%\r(Reading database ... 55%\r(Reading database ... 60%\r(Reading database ... 65%\r"}
+{"stream":"(Reading database ... 70%\r(Reading database ... 75%\r(Reading database ... 80%\r"}
+{"stream":"(Reading database ... 85%\r(Reading database ... 90%\r(Reading database ... 95%\r(Reading database ... 100%\r"}
+{"stream":"(Reading database ... 7548 files and directories currently installed.)\r\n"}
+{"stream":"Preparing to unpack .../libgdbm3_1.8.3-13.1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libgdbm3:amd64 (1.8.3-13.1) ...\r\n"}
+{"stream":"Selecting previously unselected package libgmp10:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libgmp10_2%3a6.0.0+dfsg-6_amd64.deb ...\r\n"}
+{"stream":"Unpacking libgmp10:amd64 (2:6.0.0+dfsg-6) ...\r\n"}
+{"stream":"Selecting previously unselected package libnettle4:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libnettle4_2.7.1-5+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libnettle4:amd64 (2.7.1-5+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libhogweed2:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libhogweed2_2.7.1-5+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libhogweed2:amd64 (2.7.1-5+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libffi6:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libffi6_3.1-2+b2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libffi6:amd64 (3.1-2+b2) ...\r\n"}
+{"stream":"Selecting previously unselected package libp11-kit0:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libp11-kit0_0.20.7-1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libp11-kit0:amd64 (0.20.7-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libtasn1-6:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libtasn1-6_4.2-3+deb8u2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libtasn1-6:amd64 (4.2-3+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package libgnutls-deb0-28:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libgnutls-deb0-28_3.3.8-6+deb8u3_amd64.deb ...\r\n"}
+{"stream":"Unpacking libgnutls-deb0-28:amd64 (3.3.8-6+deb8u3) ...\r\n"}
+{"stream":"Selecting previously unselected package libkeyutils1:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libkeyutils1_1.5.9-5+b1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libkeyutils1:amd64 (1.5.9-5+b1) ...\r\n"}
+{"stream":"Selecting previously unselected package libkrb5support0:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libkrb5support0_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package libk5crypto3:amd64.\r\nPreparing to unpack .../libk5crypto3_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package libkrb5-3:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libkrb5-3_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package libgssapi-krb5-2:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libgssapi-krb5-2_1.12.1+dfsg-19+deb8u2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package libidn11:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libidn11_1.29-1+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libidn11:amd64 (1.29-1+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package perl-modules.\r\n"}
+{"stream":"Preparing to unpack .../perl-modules_5.20.2-3+deb8u6_all.deb ...\r\n"}
+{"stream":"Unpacking perl-modules (5.20.2-3+deb8u6) ...\r\n"}
+{"stream":"Selecting previously unselected package perl.\r\n"}
+{"stream":"Preparing to unpack .../perl_5.20.2-3+deb8u6_amd64.deb ...\r\n"}
+{"stream":"Unpacking perl (5.20.2-3+deb8u6) ...\r\n"}
+{"stream":"Selecting previously unselected package fonts-droid.\r\nPreparing to unpack .../fonts-droid_1%3a4.4.4r2-6_all.deb ...\r\n"}
+{"stream":"Unpacking fonts-droid (1:4.4.4r2-6) ...\r\n"}
+{"stream":"Selecting previously unselected package libavahi-common-data:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libavahi-common-data_0.6.31-5_amd64.deb ...\r\n"}
+{"stream":"Unpacking libavahi-common-data:amd64 (0.6.31-5) ...\r\n"}
+{"stream":"Selecting previously unselected package libavahi-common3:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libavahi-common3_0.6.31-5_amd64.deb ...\r\n"}
+{"stream":"Unpacking libavahi-common3:amd64 (0.6.31-5) ...\r\n"}
+{"stream":"Selecting previously unselected package libdbus-1-3:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libdbus-1-3_1.8.20-0+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libdbus-1-3:amd64 (1.8.20-0+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libavahi-client3:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libavahi-client3_0.6.31-5_amd64.deb ...\r\n"}
+{"stream":"Unpacking libavahi-client3:amd64 (0.6.31-5) ...\r\n"}
+{"stream":"Selecting previously unselected package libcap-ng0:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libcap-ng0_0.7.4-2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libcap-ng0:amd64 (0.7.4-2) ...\r\n"}
+{"stream":"Selecting previously unselected package libcups2:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libcups2_1.7.5-11+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libcups2:amd64 (1.7.5-11+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libcupsimage2:amd64.\r\nPreparing to unpack .../libcupsimage2_1.7.5-11+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libcupsimage2:amd64 (1.7.5-11+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libjpeg62-turbo:amd64.\r\nPreparing to unpack .../libjpeg62-turbo_1%3a1.3.1-12_amd64.deb ...\r\n"}
+{"stream":"Unpacking libjpeg62-turbo:amd64 (1:1.3.1-12) ...\r\n"}
+{"stream":"Selecting previously unselected package libpng12-0:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libpng12-0_1.2.50-2+deb8u2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libpng12-0:amd64 (1.2.50-2+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package libjbig0:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libjbig0_2.1-3.1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libjbig0:amd64 (2.1-3.1) ...\r\n"}
+{"stream":"Selecting previously unselected package libtiff5:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libtiff5_4.0.3-12.3+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libtiff5:amd64 (4.0.3-12.3+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libcupsfilters1:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libcupsfilters1_1.0.61-5+deb8u3_amd64.deb ...\r\n"}
+{"stream":"Unpacking libcupsfilters1:amd64 (1.0.61-5+deb8u3) ...\r\n"}
+{"stream":"Selecting previously unselected package libexpat1:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libexpat1_2.1.0-6+deb8u3_amd64.deb ...\r\n"}
+{"stream":"Unpacking libexpat1:amd64 (2.1.0-6+deb8u3) ...\r\n"}
+{"stream":"Selecting previously unselected package libfreetype6:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libfreetype6_2.5.2-3+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libfreetype6:amd64 (2.5.2-3+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package ucf.\r\n"}
+{"stream":"Preparing to unpack .../archives/ucf_3.0030_all.deb ...\r\n"}
+{"stream":"Moving old data out of the way\r\n"}
+{"stream":"Unpacking ucf (3.0030) ...\r\n"}
+{"stream":"Selecting previously unselected package fonts-dejavu-core.\r\n"}
+{"stream":"Preparing to unpack .../fonts-dejavu-core_2.34-1_all.deb ...\r\n"}
+{"stream":"Unpacking fonts-dejavu-core (2.34-1) ...\r\n"}
+{"stream":"Selecting previously unselected package fontconfig-config.\r\n"}
+{"stream":"Preparing to unpack .../fontconfig-config_2.11.0-6.3_all.deb ...\r\n"}
+{"stream":"Unpacking fontconfig-config (2.11.0-6.3) ...\r\n"}
+{"stream":"Selecting previously unselected package libfontconfig1:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libfontconfig1_2.11.0-6.3_amd64.deb ...\r\n"}
+{"stream":"Unpacking libfontconfig1:amd64 (2.11.0-6.3) ...\r\n"}
+{"stream":"Selecting previously unselected package libijs-0.35:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libijs-0.35_0.35-10_amd64.deb ...\r\n"}
+{"stream":"Unpacking libijs-0.35:amd64 (0.35-10) ...\r\n"}
+{"stream":"Selecting previously unselected package libjasper1:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libjasper1_1.900.1-debian1-2.4+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libjasper1:amd64 (1.900.1-debian1-2.4+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package liblcms2-2:amd64.\r\n"}
+{"stream":"Preparing to unpack .../liblcms2-2_2.6-3+b3_amd64.deb ...\r\n"}
+{"stream":"Unpacking liblcms2-2:amd64 (2.6-3+b3) ...\r\n"}
+{"stream":"Selecting previously unselected package libpaper1:amd64.\r\n"}
+{"stream":"Preparing to unpack .../libpaper1_1.1.24+nmu4_amd64.deb ...\r\n"}
+{"stream":"Unpacking libpaper1:amd64 (1.1.24+nmu4) ...\r\n"}
+{"stream":"Selecting previously unselected package poppler-data.\r\n"}
+{"stream":"Preparing to unpack .../poppler-data_0.4.7-1_all.deb ...\r\n"}
+{"stream":"Unpacking poppler-data (0.4.7-1) ...\r\n"}
+{"stream":"Selecting previously unselected package dbus.\r\n"}
+{"stream":"Preparing to unpack .../dbus_1.8.20-0+deb8u1_amd64.deb ..."}
+{"stream":"\r\n"}
+{"stream":"Unpacking dbus (1.8.20-0+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package krb5-locales.\r\n"}
+{"stream":"Preparing to unpack .../krb5-locales_1.12.1+dfsg-19+deb8u2_all.deb ...\r\n"}
+{"stream":"Unpacking krb5-locales (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package enscript.\r\n"}
+{"stream":"Preparing to unpack .../enscript_1.6.5.90-2+b1_amd64.deb ...\r\n"}
+{"stream":"Unpacking enscript (1.6.5.90-2+b1) ...\r\n"}
+{"stream":"Selecting previously unselected package libjbig2dec0.\r\n"}
+{"stream":"Preparing to unpack .../libjbig2dec0_0.11+20120125-1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libjbig2dec0 (0.11+20120125-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libgs9-common.\r\n"}
+{"stream":"Preparing to unpack .../libgs9-common_9.06~dfsg-2+deb8u1_all.deb ...\r\n"}
+{"stream":"Unpacking libgs9-common (9.06~dfsg-2+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libgs9.\r\n"}
+{"stream":"Preparing to unpack .../libgs9_9.06~dfsg-2+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libgs9 (9.06~dfsg-2+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package gsfonts.\r\n"}
+{"stream":"Preparing to unpack .../gsfonts_1%3a8.11+urwcyr1.0.7~pre44-4.2_all.deb ...\r\n"}
+{"stream":"Unpacking gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2) ...\r\n"}
+{"stream":"Selecting previously unselected package ghostscript.\r\n"}
+{"stream":"Preparing to unpack .../ghostscript_9.06~dfsg-2+deb8u1_amd64.deb ...\r\n"}
+{"stream":"Unpacking ghostscript (9.06~dfsg-2+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libalgorithm-c3-perl.\r\nPreparing to unpack .../libalgorithm-c3-perl_0.09-1_all.deb ...\r\n"}
+{"stream":"Unpacking libalgorithm-c3-perl (0.09-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libarchive-extract-perl.\r\n"}
+{"stream":"Preparing to unpack .../libarchive-extract-perl_0.72-1_all.deb ...\r\n"}
+{"stream":"Unpacking libarchive-extract-perl (0.72-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libcgi-pm-perl.\r\n"}
+{"stream":"Preparing to unpack .../libcgi-pm-perl_4.09-1_all.deb ...\r\n"}
+{"stream":"Unpacking libcgi-pm-perl (4.09-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libfcgi-perl.\r\nPreparing to unpack .../libfcgi-perl_0.77-1+b1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libfcgi-perl (0.77-1+b1) ...\r\n"}
+{"stream":"Selecting previously unselected package libcgi-fast-perl.\r\n"}
+{"stream":"Preparing to unpack .../libcgi-fast-perl_1%3a2.04-1_all.deb ...\r\n"}
+{"stream":"Unpacking libcgi-fast-perl (1:2.04-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libclass-c3-perl.\r\n"}
+{"stream":"Preparing to unpack .../libclass-c3-perl_0.26-1_all.deb ...\r\n"}
+{"stream":"Unpacking libclass-c3-perl (0.26-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libclass-c3-xs-perl.\r\n"}
+{"stream":"Preparing to unpack .../libclass-c3-xs-perl_0.13-2+b1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libclass-c3-xs-perl (0.13-2+b1) ...\r\n"}
+{"stream":"Selecting previously unselected package libcpan-meta-perl.\r\n"}
+{"stream":"Preparing to unpack .../libcpan-meta-perl_2.142690-1_all.deb ...\r\n"}
+{"stream":"Unpacking libcpan-meta-perl (2.142690-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libparams-util-perl.\r\n"}
+{"stream":"Preparing to unpack .../libparams-util-perl_1.07-2+b1_amd64.deb ...\r\n"}
+{"stream":"Unpacking libparams-util-perl (1.07-2+b1) ...\r\n"}
+{"stream":"Selecting previously unselected package libsub-install-perl.\r\n"}
+{"stream":"Preparing to unpack .../libsub-install-perl_0.928-1_all.deb ...\r\n"}
+{"stream":"Unpacking libsub-install-perl (0.928-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libdata-optlist-perl.\r\n"}
+{"stream":"Preparing to unpack .../libdata-optlist-perl_0.109-1_all.deb ...\r\n"}
+{"stream":"Unpacking libdata-optlist-perl (0.109-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libmro-compat-perl.\r\n"}
+{"stream":"Preparing to unpack .../libmro-compat-perl_0.12-1_all.deb ...\r\n"}
+{"stream":"Unpacking libmro-compat-perl (0.12-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libsub-exporter-perl.\r\n"}
+{"stream":"Preparing to unpack .../libsub-exporter-perl_0.986-1_all.deb ...\r\n"}
+{"stream":"Unpacking libsub-exporter-perl (0.986-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libdata-section-perl.\r\n"}
+{"stream":"Preparing to unpack .../libdata-section-perl_0.200006-1_all.deb ...\r\n"}
+{"stream":"Unpacking libdata-section-perl (0.200006-1) ...\r\n"}
+{"stream":"Selecting previously unselected package liblog-message-perl.\r\n"}
+{"stream":"Preparing to unpack .../liblog-message-perl_0.8-1_all.deb ...\r\n"}
+{"stream":"Unpacking liblog-message-perl (0.8-1) ...\r\n"}
+{"stream":"Selecting previously unselected package liblog-message-simple-perl.\r\n"}
+{"stream":"Preparing to unpack .../liblog-message-simple-perl_0.10-2_all.deb ...\r\n"}
+{"stream":"Unpacking liblog-message-simple-perl (0.10-2) ...\r\n"}
+{"stream":"Selecting previously unselected package libmodule-build-perl.\r\n"}
+{"stream":"Preparing to unpack .../libmodule-build-perl_0.421000-2+deb8u1_all.deb ...\r\n"}
+{"stream":"Adding 'diversion of /usr/bin/config_data to /usr/bin/config_data.diverted by libmodule-build-perl'\r\n"}
+{"stream":"Adding 'diversion of /usr/share/man/man1/config_data.1.gz to /usr/share/man/man1/config_data.diverted.1.gz by libmodule-build-perl'\r\n"}
+{"stream":"Unpacking libmodule-build-perl (0.421000-2+deb8u1) ...\r\n"}
+{"stream":"Selecting previously unselected package libmodule-pluggable-perl.\r\n"}
+{"stream":"Preparing to unpack .../libmodule-pluggable-perl_5.1-1_all.deb ...\r\n"}
+{"stream":"Unpacking libmodule-pluggable-perl (5.1-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libmodule-signature-perl.\r\n"}
+{"stream":"Preparing to unpack .../libmodule-signature-perl_0.73-1+deb8u2_all.deb ...\r\n"}
+{"stream":"Unpacking libmodule-signature-perl (0.73-1+deb8u2) ...\r\n"}
+{"stream":"Selecting previously unselected package libpackage-constants-perl.\r\n"}
+{"stream":"Preparing to unpack .../libpackage-constants-perl_0.04-1_all.deb ...\r\n"}
+{"stream":"Unpacking libpackage-constants-perl (0.04-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libpaper-utils.\r\n"}
+{"stream":"Preparing to unpack .../libpaper-utils_1.1.24+nmu4_amd64.deb ...\r\n"}
+{"stream":"Unpacking libpaper-utils (1.1.24+nmu4) ...\r\n"}
+{"stream":"Selecting previously unselected package libpod-latex-perl.\r\n"}
+{"stream":"Preparing to unpack .../libpod-latex-perl_0.61-1_all.deb ...\r\n"}
+{"stream":"Adding 'diversion of /usr/bin/pod2latex to /usr/bin/pod2latex.bundled by libpod-latex-perl'\r\n"}
+{"stream":"Adding 'diversion of /usr/share/man/man1/pod2latex.1.gz to /usr/share/man/man1/pod2latex.bundled.1.gz by libpod-latex-perl'\r\n"}
+{"stream":"Unpacking libpod-latex-perl (0.61-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libregexp-common-perl.\r\n"}
+{"stream":"Preparing to unpack .../libregexp-common-perl_2013031301-1_all.deb ...\r\n"}
+{"stream":"Unpacking libregexp-common-perl (2013031301-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libpod-readme-perl.\r\n"}
+{"stream":"Preparing to unpack .../libpod-readme-perl_0.11-1_all.deb ...\r\n"}
+{"stream":"Unpacking libpod-readme-perl (0.11-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libtext-template-perl.\r\n"}
+{"stream":"Preparing to unpack .../libtext-template-perl_1.46-1_all.deb ...\r\n"}
+{"stream":"Unpacking libtext-template-perl (1.46-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libsoftware-license-perl.\r\n"}
+{"stream":"Preparing to unpack .../libsoftware-license-perl_0.103010-3_all.deb ...\r\n"}
+{"stream":"Unpacking libsoftware-license-perl (0.103010-3) ...\r\n"}
+{"stream":"Selecting previously unselected package libterm-ui-perl.\r\n"}
+{"stream":"Preparing to unpack .../libterm-ui-perl_0.42-1_all.deb ...\r\n"}
+{"stream":"Unpacking libterm-ui-perl (0.42-1) ...\r\n"}
+{"stream":"Selecting previously unselected package libtext-soundex-perl.\r\n"}
+{"stream":"Preparing to unpack .../libtext-soundex-perl_3.4-1+b2_amd64.deb ...\r\n"}
+{"stream":"Unpacking libtext-soundex-perl (3.4-1+b2) ...\r\n"}
+{"stream":"Selecting previously unselected package rename.\r\n"}
+{"stream":"Preparing to unpack .../archives/rename_0.20-3_all.deb ...\r\n"}
+{"stream":"Unpacking rename (0.20-3) ...\r\n"}
+{"stream":"Processing triggers for systemd (215-17+deb8u4) ...\r\n"}
+{"stream":"Setting up libgdbm3:amd64 (1.8.3-13.1) ...\r\n"}
+{"stream":"Setting up libgmp10:amd64 (2:6.0.0+dfsg-6) ...\r\n"}
+{"stream":"Setting up libnettle4:amd64 (2.7.1-5+deb8u1) ...\r\n"}
+{"stream":"Setting up libhogweed2:amd64 (2.7.1-5+deb8u1) ...\r\n"}
+{"stream":"Setting up libffi6:amd64 (3.1-2+b2) ...\r\n"}
+{"stream":"Setting up libp11-kit0:amd64 (0.20.7-1) ...\r\n"}
+{"stream":"Setting up libtasn1-6:amd64 (4.2-3+deb8u2) ...\r\n"}
+{"stream":"Setting up libgnutls-deb0-28:amd64 (3.3.8-6+deb8u3) ...\r\n"}
+{"stream":"Setting up libkeyutils1:amd64 (1.5.9-5+b1) ...\r\n"}
+{"stream":"Setting up libkrb5support0:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Setting up libk5crypto3:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Setting up libkrb5-3:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Setting up libgssapi-krb5-2:amd64 (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Setting up libidn11:amd64 (1.29-1+deb8u1) ...\r\n"}
+{"stream":"Setting up perl-modules (5.20.2-3+deb8u6) ...\r\n"}
+{"stream":"Setting up perl (5.20.2-3+deb8u6) ...\r\n"}
+{"stream":"update-alternatives: using /usr/bin/prename to provide /usr/bin/rename (rename) in auto mode\r\n"}
+{"stream":"Setting up fonts-droid (1:4.4.4r2-6) ...\r\n"}
+{"stream":"Setting up libavahi-common-data:amd64 (0.6.31-5) ...\r\n"}
+{"stream":"Setting up libavahi-common3:amd64 (0.6.31-5) ...\r\n"}
+{"stream":"Setting up libdbus-1-3:amd64 (1.8.20-0+deb8u1) ...\r\n"}
+{"stream":"Setting up libavahi-client3:amd64 (0.6.31-5) ...\r\n"}
+{"stream":"Setting up libcap-ng0:amd64 (0.7.4-2) ...\r\n"}
+{"stream":"Setting up libcups2:amd64 (1.7.5-11+deb8u1) ...\r\n"}
+{"stream":"Setting up libjpeg62-turbo:amd64 (1:1.3.1-12) ...\r\n"}
+{"stream":"Setting up libpng12-0:amd64 (1.2.50-2+deb8u2) ...\r\n"}
+{"stream":"Setting up libjbig0:amd64 (2.1-3.1) ...\r\n"}
+{"stream":"Setting up libtiff5:amd64 (4.0.3-12.3+deb8u1) ...\r\n"}
+{"stream":"Setting up libexpat1:amd64 (2.1.0-6+deb8u3) ...\r\n"}
+{"stream":"Setting up libfreetype6:amd64 (2.5.2-3+deb8u1) ...\r\n"}
+{"stream":"Setting up ucf (3.0030) ...\r\n"}
+{"stream":"debconf: unable to initialize frontend: Dialog\r\ndebconf: (TERM is not set, so the dialog frontend is not usable.)\r\ndebconf: falling back to frontend: Readline\r\n"}
+{"stream":"Setting up fonts-dejavu-core (2.34-1) ...\r\n"}
+{"stream":"Setting up fontconfig-config (2.11.0-6.3) ...\r\n"}
+{"stream":"debconf: unable to initialize frontend: Dialog\r\ndebconf: (TERM is not set, so the dialog frontend is not usable.)\r\ndebconf: falling back to frontend: Readline\r\n"}
+{"stream":"Setting up libfontconfig1:amd64 (2.11.0-6.3) ...\r\n"}
+{"stream":"Setting up libijs-0.35:amd64 (0.35-10) ...\r\n"}
+{"stream":"Setting up libjasper1:amd64 (1.900.1-debian1-2.4+deb8u1) ...\r\n"}
+{"stream":"Setting up liblcms2-2:amd64 (2.6-3+b3) ...\r\n"}
+{"stream":"Setting up libpaper1:amd64 (1.1.24+nmu4) ...\r\n"}
+{"stream":"debconf: unable to initialize frontend: Dialog\r\ndebconf: (TERM is not set, so the dialog frontend is not usable.)\r\ndebconf: falling back to frontend: Readline\r\n"}
+{"stream":"\r\nCreating config file /etc/papersize with new version\r\n"}
+{"stream":"Setting up poppler-data (0.4.7-1) ...\r\n"}
+{"stream":"Setting up dbus (1.8.20-0+deb8u1) ...\r\n"}
+{"stream":"invoke-rc.d: policy-rc.d denied execution of start.\r\n"}
+{"stream":"Setting up krb5-locales (1.12.1+dfsg-19+deb8u2) ...\r\n"}
+{"stream":"Setting up enscript (1.6.5.90-2+b1) ...\r\n"}
+{"stream":"Setting up libjbig2dec0 (0.11+20120125-1) ...\r\n"}
+{"stream":"Setting up libgs9-common (9.06~dfsg-2+deb8u1) ...\r\n"}
+{"stream":"Setting up gsfonts (1:8.11+urwcyr1.0.7~pre44-4.2) ...\r\n"}
+{"stream":"Setting up libalgorithm-c3-perl (0.09-1) ...\r\n"}
+{"stream":"Setting up libarchive-extract-perl (0.72-1) ...\r\n"}
+{"stream":"Setting up libcgi-pm-perl (4.09-1) ...\r\n"}
+{"stream":"Setting up libfcgi-perl (0.77-1+b1) ...\r\n"}
+{"stream":"Setting up libcgi-fast-perl (1:2.04-1) ...\r\n"}
+{"stream":"Setting up libclass-c3-perl (0.26-1) ...\r\n"}
+{"stream":"Setting up libclass-c3-xs-perl (0.13-2+b1) ...\r\n"}
+{"stream":"Setting up libcpan-meta-perl (2.142690-1) ...\r\n"}
+{"stream":"Setting up libparams-util-perl (1.07-2+b1) ...\r\n"}
+{"stream":"Setting up libsub-install-perl (0.928-1) ...\r\n"}
+{"stream":"Setting up libdata-optlist-perl (0.109-1) ...\r\n"}
+{"stream":"Setting up libmro-compat-perl (0.12-1) ...\r\n"}
+{"stream":"Setting up libsub-exporter-perl (0.986-1) ...\r\n"}
+{"stream":"Setting up libdata-section-perl (0.200006-1) ...\r\n"}
+{"stream":"Setting up liblog-message-perl (0.8-1) ...\r\n"}
+{"stream":"Setting up liblog-message-simple-perl (0.10-2) ...\r\n"}
+{"stream":"Setting up libmodule-build-perl (0.421000-2+deb8u1) ...\r\n"}
+{"stream":"Setting up libmodule-pluggable-perl (5.1-1) ...\r\n"}
+{"stream":"Setting up libmodule-signature-perl (0.73-1+deb8u2) ...\r\n"}
+{"stream":"Setting up libpackage-constants-perl (0.04-1) ...\r\n"}
+{"stream":"Setting up libpaper-utils (1.1.24+nmu4) ...\r\n"}
+{"stream":"Setting up libpod-latex-perl (0.61-1) ...\r\n"}
+{"stream":"Setting up libregexp-common-perl (2013031301-1) ...\r\n"}
+{"stream":"Setting up libpod-readme-perl (0.11-1) ...\r\n"}
+{"stream":"Setting up libtext-template-perl (1.46-1) ...\r\n"}
+{"stream":"Setting up libsoftware-license-perl (0.103010-3) ...\r\n"}
+{"stream":"Setting up libterm-ui-perl (0.42-1) ...\r\n"}
+{"stream":"Setting up libtext-soundex-perl (3.4-1+b2) ...\r\n"}
+{"stream":"Setting up rename (0.20-3) ...\r\n"}
+{"stream":"update-alternatives: using /usr/bin/file-rename to provide /usr/bin/rename (rename) in auto mode\r\n"}
+{"stream":"Setting up libcupsfilters1:amd64 (1.0.61-5+deb8u3) ...\r\n"}
+{"stream":"Setting up libcupsimage2:amd64 (1.7.5-11+deb8u1) ...\r\n"}
+{"stream":"Setting up libgs9 (9.06~dfsg-2+deb8u1) ...\r\n"}
+{"stream":"Setting up ghostscript (9.06~dfsg-2+deb8u1) ...\r\n"}
+{"stream":"Processing triggers for libc-bin (2.19-18+deb8u4) ...\r\n"}
+{"stream":"Processing triggers for systemd (215-17+deb8u4) ...\r\n"}
+{"stream":" ---\u003e 6143335a5d33\n"}
+{"stream":"Removing intermediate container 35909d774c92\n"}
+{"stream":"Step 5 : VOLUME /data\n"}
+{"stream":" ---\u003e Running in 57f8c6189f4b\n"}
+{"stream":" ---\u003e 7222266a4c29\n"}
+{"stream":"Removing intermediate container 57f8c6189f4b\n"}
+{"stream":"Successfully built 7222266a4c29\n"}

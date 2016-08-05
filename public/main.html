@@ -1,0 +1,35 @@
+<div class="row">
+    <div ng-controller="MainCtrl">
+        <div class="col-xs-6 col-sm-3 col-lg-2 module">
+            <h2 class="title">Select Module</h2>
+            <ui-select ng-model="module.selected" limit="10" ng-disabled="!moduleList" ng-change="getModule(module.selected)">
+                <ui-select-match placeholder="Select module" ng-click="changePlaceholder()">{{$select.selected.getName()}}</ui-select-match>
+                <ui-select-choices ng-init=init() repeat="module in moduleList | listFilter: $select.search | limitTo : $select.limit" class="form-control">
+                    <span dragmod dragStyle="dragStyle" ng-bind-html="module.getName() | highlight: $select.search"></span>
+                </ui-select-choices>
+            </ui-select>
+            <div class="module-desc" ng-if="selectedModule.getDescription()">
+                {{selectedModule.getDescription()}}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-lg-8">
+            <h2 class="title">Processus</h2>
+            <table class="droplist">
+                <tr ng-repeat="line in flow track by $index">
+                    <td dropmod={{$parent.$index}}-{{$index}} dropStyle="dropStyle" ng-repeat="col in line track by $index">
+                        <button ng-show="$last" class="btn btn-xs btn-warning btn-delete" ng-click="removeModule($parent.$index)"><span class="glyphicon glyphicon-remove"></span></button>
+                        <p dragmod dragStyle="dragStyle">{{col}}</p>
+                    </td>
+                    <td ng-if="line.length > 0" dropmod="{{$parent.$index}}-newcol" dropStyle="dropStyle">
+                        <p class="newmod">chain any module here</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td dropmod="newline" dropStyle="dropStyle">
+                        <p class="newmod">dragg any module here</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
